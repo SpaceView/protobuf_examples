@@ -1,0 +1,6 @@
+syntax = "proto2";
+package video_stream;
+ 
+message Test {
+  repeated int64 id = 1;
+}

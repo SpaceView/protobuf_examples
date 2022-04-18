@@ -1,0 +1,8 @@
+syntax = "proto2";	//Specify the protobuf version, default is v2, other versions: "proto3"
+
+package caffe; 	// Finally generate c + + code: namespace caffe 
+
+message BlobShape {	// Finally generate c++ code: class BlobShape: public:: google:: protobuf:: Message{
+  //The following statement finally generates c++ code: google:: protobuf:: Repeated Field <: google:: protobuf:: Int64 > dim_;
+  repeated int64 dim = 1 [packed = true];	//repeated list field, number after equal sign denotes identifier, [packed=true] guarantees more efficient encoding
+}

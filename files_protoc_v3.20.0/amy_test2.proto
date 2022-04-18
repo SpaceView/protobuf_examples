@@ -1,0 +1,11 @@
+syntax = "proto2";
+package video_stream;
+ 
+message Test {
+  repeated Obj objs = 1;
+}
+ 
+message Obj {
+  optional int64 id = 1;
+  optional string name = 2;
+}
